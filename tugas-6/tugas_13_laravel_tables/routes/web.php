@@ -18,6 +18,10 @@ Route::get('/', [DashboardController::class, 'main']);
 Route::get('/register', [DashboardController::class, 'form']);
 Route::post('/welcome', [DashboardController::class, 'welcome']);
 
+Route::get('/table', function(){
+    return view('page.table');
+});
+
 Route::get('/data-table', function(){
     return view('page.data-table');
 });
