@@ -16,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($casts as $cast)
+            @forelse ($casts as $cast)
             <tr>
                 <td>{{ $cast->name }}</td>
                 <td>{{ $cast->age }}</td>
@@ -30,7 +30,11 @@
                     </form>
                 </td>
             </tr>
-            @endforeach
+            @empty
+            <tr>
+                <td colspan="3">No data shown, please add.</td>
+            </tr>
+            @endforelse
         </tbody>
     </table>
 @endsection
