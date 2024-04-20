@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('judul')
-    Halaman Data Table
+    Halaman Table
 @endsection
 
 @push('scripts')
